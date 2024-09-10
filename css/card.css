@@ -1,0 +1,41 @@
+#productos{
+    color: #E6E6FA;
+    font-style: bold;
+   
+}
+.card {
+    border: none;
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: black 1px solid;
+}
+.card img {
+    width: 350px;
+    height: 300px;
+}
+
+.card-body {
+    text-align: left;
+    background-color: black;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+.btn {
+    background-color: #007bff; 
+    color: white; /
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}

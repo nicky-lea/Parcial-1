@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+    #boton-desplegable-1{
+        list-style: none;
+    margin: 10px;
+    width: 1500px;
+    justify-content: center;
+  }
+  #boton-desplegable-2{
+    list-style: none;
+    margin: 10px;
+    width: 1500px;
+    justify-content: center;
+  }
+  #boton-desplegable-3{
+    list-style: none;
+    margin: 10px;
+    width: 1500px;
+    justify-content: center;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hyundai</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="test.html">Test Drive</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <button id="boton-desplegable-1">Sobre la empresa</button>
+        <div id="menu-desplegable-1" style="display: none;">
+          <ul>
+            <li><h1>HYUNDAI</h1><P>Hyundai Motor Company es el mayor fabricante surcoreano de automóviles. Su sede principal está en la prefectura de Yangjae-Dong en la ciudad de Seocho-Gu en Seúl. Es el sexto fabricante de automóviles más grande del mundo.</P></li>
+          </ul>
+        </div>
+        <br>
+        <button id="boton-desplegable-2">Mision</button>
+        <div id="menu-desplegable-2" style="display: none;">
+          <ul>
+            <li><h1>MISION</h1><P>Brindar a todos nuestros clientes opciones de movilidad accesibles y con gran tecnología.</P></li>
+          </ul>
+        </div>
+        <br>
+        <button id="boton-desplegable-3">Vision</button>
+        <div id="menu-desplegable-3" style="display: none;">
+          <ul>
+            <li><h1>VISION</h1><P>Posicionarnos como la marca de mayor innovación tecnológica en el país en los próximos 3 años, fortaleciendo nuestra imagen de sostenibilidad, ofertando una amplia gama de vehículos híbridos y eléctricos, que nos permitan sobrepasar el 10% de participación en el mercado automotriz.</P></li>
+          </ul>
+        </div>
+        
+        <script>
+          document.getElementById("boton-desplegable-1").addEventListener("click", function() {
+            var menu = document.getElementById("menu-desplegable-1");
+            if (menu.style.display === "none") {
+              menu.style.display = "block";
+            } else {
+              menu.style.display = "none";
+            }
+          });
+        
+          document.getElementById("boton-desplegable-2").addEventListener("click", function() {
+            var menu = document.getElementById("menu-desplegable-2");
+            if (menu.style.display === "none") {
+              menu.style.display = "block";
+            } else {
+              menu.style.display = "none";
+            }
+          });
+        
+          document.getElementById("boton-desplegable-3").addEventListener("click", function() {
+            var menu = document.getElementById("menu-desplegable-3");
+            if (menu.style.display === "none") {
+              menu.style.display = "block";
+            } else {
+              menu.style.display = "none";
+            }
+          });
+        </script>
+    </main>
+</body>
+</html>
