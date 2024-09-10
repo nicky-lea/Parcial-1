@@ -1,0 +1,188 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Encabezado y Navegación */
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 1em 0;
+    text-align: center;
+}
+header nav h1{
+    color: white;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+.hero img {
+    object-fit: cover; 
+    width: 1518px;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+#sobre-mi {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    color: #333;
+}
+
+/* Galería */
+#galeria {
+    padding: 40px 20px;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+#contacto {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botón */
+button {
+    background-color: #5C6BC0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3949ab;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    #sobre-mi, #galeria, #contacto {
+        padding: 20px 10px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        max-width: 100px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+
+    form {
+        max-width: 90%; /* Se ajusta al 100% en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .gallery-item img {
+        max-width: 80px; /* Aún más pequeño en pantallas muy pequeñas */
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
