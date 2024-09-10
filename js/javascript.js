@@ -32,14 +32,6 @@ function agendarCita() {
                 datos: {
                     nombre: nombre,
                     apellidos: apellidos,
-                    email: email,
-                    estrato: estrato,
-                    telefono: telefono,
-                    fechaNacimiento: fechaNacimiento,
-                    grupoSanguineo: grupoSanguineo,
-                    fechaCita: fechaCita,
-                    horaCita: horaCita,
-                    actividades: actividades
                 }
             };
         }
